@@ -2,14 +2,14 @@ from excel_class import ExcelSorts as EXC
 import pandas as pd
 
 
-#if you enter the file path you can delete from here to next command line.
+#if you enter the file path you can delete from here to next comment line.
 import os
 
 current_directory = os.getcwd()  
 file_path = current_directory+'\\mulakat1\\'+'TestCaseData.xlsx'
 xls = pd.ExcelFile(file_path)
 
-#you can delete the code above from here to the next command line and replace xls = pd.ExcelFile(r'Dummy\Dummy\mulakat\TestCaseData.xlsx' )
+#you can delete the code above from here to the next comment line and replace xls = pd.ExcelFile(r'Dummy\Dummy\mulakat\TestCaseData.xlsx' )
 excel_to_df = EXC()
 df = pd.read_excel(xls)
 df = df.dropna()
